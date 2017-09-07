@@ -1,11 +1,13 @@
 package com.zntq.hqcoolweather.db;
 
+import org.litepal.crud.DataSupport;
+
 /**
  * 记录县
  * Created by XieTao on 2017/9/7.
  */
 
-public class County {
+public class County extends DataSupport {
     private int id;
 
     private String countyName;
@@ -45,4 +47,5 @@ public class County {
     public void setCityId(int cityId) {
         this.cityId = cityId;
     }
+
 }
